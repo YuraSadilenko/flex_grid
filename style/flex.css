@@ -19,7 +19,8 @@
 .flex__col-reverse {
     display: flex;
     flex-direction: column-reverse;
-    flex-grow: 1;
+    flex-basis: 100px;
+    flex-grow: 65;
 }
 
 .item-1 {
@@ -49,18 +50,16 @@
 }
 
 .item-5 {   
-    /* width: calc(100% - 100px ); */
-    flex-basis: calc(100% - 100px );
-
+    /* flex-basis: calc(100% - 100px ); */
+    flex-grow: 1;
     height: 300px;    
     background-color: rgb(255, 215, 82);
     border-width: 1px 0 0 1px;
 }
 
 .item-6 {
-    /* width: calc((100% - 100px ) * 0.35); */
-    flex-basis: calc((100% - 100px ) * 0.35);
-
+    /* flex-basis: calc((100% - 100px ) * 0.35); */
+    flex-grow: 35;
     height: 450px;
     background-color: rgb(61, 54, 29);
     color: #fff;
@@ -71,3 +70,4 @@
         word-break: break-all;
     }
 }
+
